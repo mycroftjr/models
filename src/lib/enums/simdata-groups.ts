@@ -16,6 +16,7 @@ enum SimDataGroup {
   Buff = 0x0017E8F6,
   BuildBuy = 0x0003C397, // No tuning type
   Business = 0x00D80786,
+  BusinessRule = 0x00E58CD4,
   Career = 0x00996B98,
   CareerGig = 0x00DB0E11,
   CareerLevel = 0x0070ADD4,
@@ -37,11 +38,13 @@ enum SimDataGroup {
   ClientCasThumbnailCamera = 0x00496642, // No tuning type
   ClientCasThumbnailPartTuning = 0x00D1D002, // No tuning type
   ClientCasTuning = 0x004B5265, // No tuning type
+  ClientPubertyTuning = 0x00190805, // No tuning type
   ClientRegionSortTuning = 0x0057C8BA, // No tuning type
   ClientTagCategoriesMetadata = 0x0012D444, // No tuning type
   ClientTags = 0x00B98960, // No tuning type
   ClientTagsMapping = 0x00057D11, // No tuning type
   ClientTagsTraitGroupMetadata = 0x003E4215, // No tuning type
+  ClientThriftStoreTuning = 0x00FDCFE0, // No tuning type
   ClientThumbnailPoses = 0x00C27C36, // No tuning type
   ClientTutorial = 0x0073074B, // No tuning type
   ClubInteractionGroup = 0x000FFACE,
@@ -57,6 +60,7 @@ enum SimDataGroup {
   Mood = 0x007B6002,
   NativeBuildBuy = 0x0094E9AE, // No tuning type
   NativeSeasonsWeather = 0x003A5A65, // No tuning type
+  Object = 0x001DE602,
   Objective = 0x0069453E,
   PieMenuCategory = 0x00E9D967,
   Recipe = 0x0097F8C8,

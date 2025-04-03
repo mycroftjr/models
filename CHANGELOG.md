@@ -5,8 +5,25 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.6.14] - 2024/03/10
+### Added
+- Add missing SimDataGroup values.
+
+## [0.6.13] - 2024/03/10
+### Added
+- Add BusinessRule value to TuningResourceType enum.
+
+## [0.6.12] - 2024/02/06
+### Fixed
+- Fix issue with serializing SimData with adjacent booleans.
+
+## [0.6.11] - 2023/10/20
+### Added
+- Add object SimData group.
+- Add some missing binary resource types (still incomplete).
+
 ## [0.6.10] - 2023/10/01
-### Changed
+### Added
 - Add in missing tuning types and SimData groups ([by MycroftJr](https://github.com/sims4toolkit/models/pull/13)).
 
 ## [0.6.9] - 2023/07/19
