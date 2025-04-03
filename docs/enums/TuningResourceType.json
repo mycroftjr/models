@@ -20,6 +20,10 @@
           "displayType": "enum",
           "values": [
             {
+              "name": "AccountReward",
+              "value": "0xBB0F19D8"
+            },
+            {
               "name": "Achievement",
               "value": "0x78559E9E"
             },
@@ -118,6 +122,10 @@
             {
               "name": "CasPreferenceCategory",
               "value": "0xCE04FC4B"
+            },
+            {
+              "name": "CasPreferenceGroup",
+              "value": "0x6690F724"
             },
             {
               "name": "CasPreferenceItem",
@@ -338,6 +346,14 @@
             {
               "name": "SlotTypeSet",
               "value": "0x3F163505"
+            },
+            {
+              "name": "SmallBusinessBinary",
+              "value": "0x057424DD"
+            },
+            {
+              "name": "SmallBusinessSeed",
+              "value": "0xB22EA24D"
             },
             {
               "name": "Snippet",

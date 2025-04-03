@@ -1,15 +1,18 @@
-import fs from "fs";
 import glob from "glob";
 import path from "path";
 import { Package, SimDataResource } from "../dst/models";
 import { BinaryResourceType, SimDataGroup, TuningResourceType } from "../dst/enums";
 import { ResourceKeyPair } from "../dst/lib/packages/types";
-import { formatAsHexString } from "@s4tk/hashing/formatting"
+import { formatAsHexString } from "@s4tk/hashing/formatting";
+import { registerPlugin } from "../dst/plugins";
+import BufferFromFile from "@s4tk/plugin-bufferfromfile";
+registerPlugin(BufferFromFile);
 
 const directories = [
   '/Applications/The Sims 4 Packs',
   '/Applications/The Sims 4.app',
   'C:/Program Files/EA Games/The Sims 4',
+  'D:/Program Files/EA Games/The Sims 4',
 ];
 
 const groupsToIgnore = new Set([
@@ -46,18 +49,20 @@ findPackagePaths().then(packagePaths => {
 
   console.log("Reading packages...");
   packagePaths.forEach((path, i) => {
-    const buffer = fs.readFileSync(path);
-
-    const entries = Package.extractResources(buffer, {
-      resourceFilter(type, group, inst) {
-        if (type !== BinaryResourceType.SimData) return false;
-        if (groupsToIgnore.has(group)) return false;
-        if (group in SimDataGroup) return false;
-        return true;
-      }
-    });
-
-    allFiles.push(...entries);
+    try {
+      const entries = Package.streamResources(path, {
+        resourceFilter(type, group, inst) {
+          if (type !== BinaryResourceType.SimData) return false;
+          if (groupsToIgnore.has(group)) return false;
+          if (group in SimDataGroup) return false;
+          return true;
+        }
+      });
+  
+      allFiles.push(...entries);
+    } catch (error: any) {
+      console.error(error.message);
+    }
     console.log(`(${i + 1}/${packagePaths.length}) Read ${path}`);
   });
 

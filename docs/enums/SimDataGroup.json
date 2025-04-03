@@ -20,6 +20,10 @@
           "displayType": "enum",
           "values": [
             {
+              "name": "AccountReward",
+              "value": "0x000F1963"
+            },
+            {
               "name": "Achievement",
               "value": "0x00559EE6"
             },
@@ -98,6 +102,10 @@
             {
               "name": "CasPreferenceCategory",
               "value": "0x0004FC85"
+            },
+            {
+              "name": "CasPreferenceGroup",
+              "value": "0x0090F742"
             },
             {
               "name": "CasPreferenceItem",

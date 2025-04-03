@@ -5,6 +5,7 @@ import TuningResourceType from "./tuning-resources";
  * Groups for SimDatas.
  */
 enum SimDataGroup {
+  AccountReward = 0x000F1963,
   Achievement = 0x00559EE6,
   AchievementCategory = 0x0051C125,
   AchievementCollection = 0x00D2B461,
@@ -25,6 +26,7 @@ enum SimDataGroup {
   CasMenuItem = 0x00BA50F8,
   CasOccultSkintone = 0x00C36C35, // uses TuningResourceType.Tuning
   CasPreferenceCategory = 0x0004FC85,
+  CasPreferenceGroup = 0x0090F742,
   CasPreferenceItem = 0x0068FDCE,
   CasStoriesAnswer = 0x00F12D97,
   CasStoriesQuestion = 0x00246B9E,

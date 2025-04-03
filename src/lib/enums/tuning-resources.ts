@@ -4,6 +4,7 @@ import { getAllEnumValues, pascalToSnake, snakeToPascal } from "../common/helper
  * Types for tuning resources (i.e. any XML resource that is loaded as tuning).
  */
 enum TuningResourceType {
+  AccountReward = 0xBB0F19D8,
   Achievement = 0x78559E9E,
   AchievementCategory = 0x2451C101,
   AchievementCollection = 0x04D2B465,
@@ -29,6 +30,7 @@ enum TuningResourceType {
   CasMenu = 0x935A83C2,
   CasMenuItem = 0x0CBA50F4,
   CasPreferenceCategory = 0xCE04FC4B,
+  CasPreferenceGroup = 0x6690F724,
   CasPreferenceItem = 0xEC68FD22,
   CasStoriesAnswer = 0x80F12D17,
   CasStoriesQuestion = 0x03246B9D,
@@ -84,6 +86,8 @@ enum TuningResourceType {
   SituationJob = 0x9C07855F,
   SlotType = 0x69A5DAA4,
   SlotTypeSet = 0x3F163505,
+  SmallBusinessBinary = 0x057424DD,
+  SmallBusinessSeed = 0xB22EA24D,
   Snippet = 0x7DF2169C,
   SocialGroup = 0x2E47A104,
   Spell = 0x1F3413D9,
