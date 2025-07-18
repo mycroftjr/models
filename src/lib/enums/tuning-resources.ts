@@ -35,6 +35,7 @@ enum TuningResourceType {
   CasStoriesAnswer = 0x80F12D17,
   CasStoriesQuestion = 0x03246B9D,
   CasStoriesTraitChooser = 0x8DAD1549,
+  CheatSheet = 0x16B37B7A,
   Clan = 0xDEBEE6A5,
   ClanValue = 0x998ED0AB,
   ClubInteractionGroup = 0xFA0FFA34,
