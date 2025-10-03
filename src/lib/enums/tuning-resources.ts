@@ -46,6 +46,7 @@ enum TuningResourceType {
   DramaNode = 0x2553F435,
   Ensemble = 0xB9881120,
   GameRuleset = 0xE1477E18,
+  GetawayChallenge = 0xDE64C78B,
   GuidanceTip = 0xD4A09ABD,
   Headline = 0xF401205D,
   HolidayDefinition = 0x0E316F6D,
